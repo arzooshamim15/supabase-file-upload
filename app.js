@@ -1,7 +1,7 @@
 import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm'
 const supabase = createClient('https://fizyiauptqctsmhgtbdj.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZpenlpYXVwdHFjdHNtaGd0YmRqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzE4MzcwMzUsImV4cCI6MjA4NzQxMzAzNX0.UfG3ftKYem5vJeQ_y0tyRgy4ewJl5Ob4J3ZI20ceSRc')
 
-
+//  started code 
 async function upload() {
     let image = document.getElementById("profile_image");
     let file = image.files[0];
@@ -42,4 +42,5 @@ async function viewImage(elem) {
     }
     console.log(view.src = data.publicUrl)
 }
+
 window.viewImage = viewImage;
